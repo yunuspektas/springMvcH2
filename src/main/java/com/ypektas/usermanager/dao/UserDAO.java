@@ -1,4 +1,4 @@
-package com.devcases.usermanager.dao;
+package com.ypektas.usermanager.dao;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import javax.persistence.TypedQuery;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.devcases.usermanager.model.User;
+import com.ypektas.usermanager.model.User;
 
 @Component
 public class UserDAO {

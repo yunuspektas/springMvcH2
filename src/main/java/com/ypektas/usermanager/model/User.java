@@ -1,4 +1,4 @@
-package com.devcases.usermanager.model;
+package com.ypektas.usermanager.model;
 
 import java.io.Serializable;
 

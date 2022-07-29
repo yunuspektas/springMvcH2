@@ -1,4 +1,4 @@
-package com.devcases.usermanager.web;
+package com.ypektas.usermanager.web;
 
 import java.util.Random;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.devcases.usermanager.model.User;
-import com.devcases.usermanager.service.UserService;
+import com.ypektas.usermanager.model.User;
+import com.ypektas.usermanager.service.UserService;
 
 /**
  * Handles requests for the application home page.

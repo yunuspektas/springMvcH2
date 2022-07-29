@@ -1,12 +1,12 @@
-package com.devcases.usermanager.service;
+package com.ypektas.usermanager.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.devcases.usermanager.dao.UserDAO;
-import com.devcases.usermanager.model.User;
+import com.ypektas.usermanager.dao.UserDAO;
+import com.ypektas.usermanager.model.User;
 
 @Service
 public class UserService {
