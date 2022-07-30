@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+root {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	margin-top: 5em; text-align : center;
+	height: 100%;
+	font-family: Arial;
+	text-align: center;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+footer, header {
+	position: fixed;
+	font-size: 20px;
+	color: white;
+	background-color: #395689;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	display: block;
+	padding: 10px;
+}
+
+header {
+	top: 0px;
+}
+
+footer {
+	bottom: 0px;
+}
+
+h1 {
+	margin: auto;
+}
+
+h1.h1 {
+	margin-top: 7em;
+}
+
+div {
+	display: inline-block;
+	margin: 2em;
+}
+
+div.deneme {
+	text-align: center;
+	margin: 2rem;
+}
+
+a {
+	margin-top: 2em;
+	font-size: 1.25em;
+	text-decoration: none;
+	color:#395689;
+	
+}
+
+a:hover, a:active {
+	background-color: #395689;
+	padding: 0.25em; border-radius : 10px;
+	color: white;
+	border-radius: 10px;
+}
+
+table {
+	width: 100%;
+	border: 5px solid #505050;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 6px 10px 10px 12px;
+	background: #C1DAD7;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+table tr th {
+	font: bold 1em "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	padding: 20px;
+	text-align: center;
+}
+
+table tr.deneme td {
+	padding: 10px;
+	text-align: left;
+}

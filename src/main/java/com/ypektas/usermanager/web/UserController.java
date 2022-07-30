@@ -30,22 +30,34 @@ public class UserController {
 		model.addAttribute("users", userService.getAllUsers() );
 		
 		return "home";
+		//return "listusers";
+	}
+	
+	@RequestMapping(value = "/get", method = RequestMethod.GET)
+	public String listusers(Model model) {
+		
+		model.addAttribute("users", userService.getAllUsers() );
+		
+		//return "home";
+		return "listusers";
 	}
 	
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String addUser() {
 		
-		userService.save(new User("username_" + new Random().nextInt(1000)));
+		//TODO : aşağıdaki save metodunu düzelt
+		// userService.save(new User("username_" + new Random().nextInt(1000)));
 		
-		return "redirect:/";
+		return "register";
 	}
 	
-	@RequestMapping(value = "/delete/{userId}", method = RequestMethod.GET)
-	public String removeUser(@PathVariable("userId") int userId) {
-		
-		userService.delete(userId);
-		
-		return "redirect:/";
-	}
+	/*
+	 * @RequestMapping(value = "/delete/{userId}", method = RequestMethod.GET)
+	 * public String removeUser(@PathVariable("userId") int userId) {
+	 * 
+	 * userService.delete(userId);
+	 * 
+	 * return "redirect:/"; }
+	 */
 	
 }
