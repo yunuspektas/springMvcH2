@@ -5,8 +5,11 @@ root {
 	margin: 0px;
 }
 
+
+
 body {
-	margin-top: 5em; text-align : center;
+	margin-top: 5em; 
+	text-align : center;
 	height: 100%;
 	font-family: Arial;
 	text-align: center;
