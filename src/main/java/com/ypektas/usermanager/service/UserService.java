@@ -23,8 +23,6 @@ public class UserService {
 		userDAO.save(aUser);
 	}
 	
-	public void delete(int userId) {
-		userDAO.delete(userId);
-	}
+
 
 }

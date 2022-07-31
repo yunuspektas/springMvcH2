@@ -11,7 +11,7 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
 	 	http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 	
-	<!-- Root Context: defines shared resources visible to all other web components -->
+	
 	
 	<mvc:annotation-driven />
 	
@@ -19,11 +19,11 @@
 	
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	
-	<!-- Use in-memory embedded H2 database -->
+	<!-- H2 database -->
 	<jdbc:embedded-database id="dataSource" type="H2">
 	</jdbc:embedded-database>
 	
-	<!-- Run H2 web server within application that will access the same in-memory database -->
+	
 	<bean id="h2Server" class="org.h2.tools.Server" factory-method="createTcpServer" init-method="start" destroy-method="stop" depends-on="h2WebServer">
     	<constructor-arg value="-tcp,-tcpAllowOthers,-tcpPort,9092"/>
 	</bean>
@@ -31,7 +31,7 @@
     	<constructor-arg value="-web,-webAllowOthers,-webPort,8082"/>
 	</bean>
 	
-	<!-- Database managed by Hibernate -->
+	<!--Hibernate -->
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="persistenceUnitName" value="UsersPU" />
         <property name="dataSource" ref="dataSource" />
@@ -47,6 +47,7 @@
 	        <map>
 	            <entry key="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
 	            <entry key="hibernate.hbm2ddl.auto" value="create" />
+	            <!--Uygulama ayağa kalktığında DB boş kalmasın diye ilk kullanıcı değerleri girildi-->
 	            <entry key="hibernate.hbm2ddl.import_files" value="import_data.sql" />
 	            <entry key="hibernate.show_sql" value="true" />
 	        </map>
