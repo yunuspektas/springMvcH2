@@ -8,16 +8,16 @@
 <style><%@include file="/WEB-INF/css/home.css"%></style>
 </head>
 <body>
-<header>SpringMVC Project</header>
-	<h1>Kayıtlı Kullanıcı Bilgileri</h1>
+<header>SpringMVC Projesi</header>
+	<h2>Kayıtlı Kullanıcı Bilgileri</h2>
 	<div>
-	<table>
+	<table id="users">
 			<tr>
-					<th>İsim </th>
-					<th>Soy-isim</th>
-					<th>K.Grubu </th>
-					<th>Adres </th>
-					<th>Telefon</th>
+					<th>İSİM </th>
+					<th>SOY İSİM</th>
+					<th>KAN GRUBU</th>
+					<th>ADRES</th>
+					<th>TELEFON</th>
 			</tr>
 		<c:forEach var="user" items="${users}">
 			<tr class="deneme">
@@ -28,9 +28,7 @@
 				<td><c:out value="${user.username}" /></td>				
 				<td><c:out value="${user.phone}" /></td>
 
-				<%-- 		<td>
-					<a href="<c:url value="/delete/${user.id}"/>" >Delete user</a>
-				</td> --%>
+
 			</tr>
 		</c:forEach>
 		<c:if test="${empty users}">

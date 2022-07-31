@@ -10,9 +10,9 @@
 <style><%@include file="/WEB-INF/css/home.css"%></style>
 </head>
 <body>
-<header>SpringMVC Project</header>
+<header>SpringMVC Projesi</header>
 
-<h1 class="h1">SpringMVC-H2  Database  Uygulaması</h1>
+<h2 class="h1">SpringMVC-H2  Database  Uygulaması</h2>
 
 	<div><a href="<c:url value="/add"/>">Yeni Kayıt Ekle</a></div>
 	<div><a href="<c:url value="/get"/>">Kayıtları Listele</a></div>

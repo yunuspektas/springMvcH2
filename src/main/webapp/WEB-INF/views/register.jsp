@@ -11,10 +11,10 @@
 
 </head>
 <body>
-	<header>SpringMVC Project</header>
+	<header>SpringMVC Projesi</header>
 
-	<div class="jumbotron text-center">
-		<h1>Kullanıcı Kayıt Formu</h1>
+	<div >
+		<h2>Kullanıcı Kayıt Formu</h2>
 
 	</div>
 
@@ -69,4 +69,3 @@
 	<footer>Kullanıcı Kayıt Platformu</footer>
 </body>
 </html>
-<div class="open_grepper_editor" title="Edit & Save To Grepper"></div>

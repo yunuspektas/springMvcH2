@@ -37,11 +37,11 @@ footer {
 	bottom: 0px;
 }
 
-h1 {
+h2 {
 	margin: auto;
 }
 
-h1.h1 {
+h2.h1 {
 	margin-top: 7em;
 }
 
@@ -70,24 +70,28 @@ a:hover, a:active {
 	border-radius: 10px;
 }
 
-table {
-	width: 100%;
-	border: 5px solid #505050;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	padding: 6px 10px 10px 12px;
-	background: #C1DAD7;
-	border-collapse: collapse;
-	margin-bottom: 20px;
+#users {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom : 2em;
 }
 
-table tr th {
-	font: bold 1em "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	padding: 20px;
-	text-align: center;
+#users td, #users th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-table tr.deneme td {
-	padding: 10px;
-	text-align: left;
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+#users tr:hover {background-color: #ddd;}
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #395689;
+  color: white;
 }
+
+
